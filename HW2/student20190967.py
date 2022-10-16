@@ -40,15 +40,15 @@ row_id = 1
 for row in ws:	
 	if row_id != 1:
 		sum_v = ws.cell(row = row_id, column = 7).value
-		grade = "C"
+		grade = "C0"
 		if(sum_v >= apscore):
 			grade = 'A+'
 		elif(sum_v >= ascore):
-			grade = 'A'
+			grade = 'A0'
 		elif(sum_v >= bpscore):
 			grade = 'B+'
 		elif(sum_v >= bscore):
-			grade = 'B'
+			grade = 'B0'
 		elif(sum_v >= cpscore):
 			grade = 'C+'
 		ws.cell(row = row_id, column = 8).value = grade
